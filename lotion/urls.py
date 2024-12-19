@@ -21,5 +21,5 @@ from lotion.core.views import DocumentListCreateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('document/list/', DocumentListCreateView.as_view()),
+    path('document/', DocumentListCreateView.as_view()),
 ]
