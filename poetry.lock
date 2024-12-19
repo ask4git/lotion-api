@@ -49,6 +49,20 @@ files = [
 django = ">=4.2"
 
 [[package]]
+name = "drf-rw-serializers"
+version = "1.4.0"
+description = "Generic views, viewsets and mixins that extend the Django REST Framework ones adding separated serializers for read and write operations"
+optional = false
+python-versions = "<4.0,>=3.8"
+files = [
+    {file = "drf_rw_serializers-1.4.0-py3-none-any.whl", hash = "sha256:6828c397653c80c05db9913845fa4da3a4953af7044728cc6d671a4e08465e22"},
+    {file = "drf_rw_serializers-1.4.0.tar.gz", hash = "sha256:2e2319056b53e6b97ed6e741b70ed94d5cd14150544e66ef4ad7a0fdfa277bbe"},
+]
+
+[package.dependencies]
+djangorestframework = ">=3.14.0,<4.0.0"
+
+[[package]]
 name = "gunicorn"
 version = "23.0.0"
 description = "WSGI HTTP Server for UNIX"
@@ -137,4 +151,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "1ddb157e33b59a631d05c8afcf5a3d018274e33a9cb6c345a3d660690849d71d"
+content-hash = "fd9522f026c1af49d12b3d9ff19f0ddd0bc06aa31a8f1b82dc7af749aa57f569"

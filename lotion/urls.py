@@ -17,9 +17,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from lotion.core.views import DocumentListCreateView
+from lotion.core.views import (
+    DocumentListCreateView,
+    DocumentRetrieveUpdateAPIView,
+    DocumentInactivateUpdateAPIView,
+)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('document/', DocumentListCreateView.as_view()),
+    path('document/<str:uid>/', DocumentRetrieveUpdateAPIView.as_view()),
+    path('document/del/<str:uid>/', DocumentInactivateUpdateAPIView.as_view()),
 ]
