@@ -10,7 +10,7 @@ def generate_sid():
 
 class Document(models.Model):
     uid = models.CharField(primary_key=True, max_length=24, editable=False, default=generate_sid)
-    parent_uid = models.CharField(max_length=255)
+    parent_uid = models.CharField(max_length=255, null=True, blank=True, default="ROOT")
     child_uid = models.JSONField(default=list, blank=True)
     title = models.CharField(max_length=255)
     content = models.TextField()
