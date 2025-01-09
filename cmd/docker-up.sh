@@ -1,1 +1,1 @@
-docker-compose -f docker-compose.yml -p lotion-api up
+docker-compose -f docker-compose.yml -p lotion-api up --build
